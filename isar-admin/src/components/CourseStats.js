@@ -19,7 +19,7 @@ const DashboardCharts = () => {
   const [stats, setStats] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/admin/stats')
+    fetch('https://isar-backend.onrender.com/api/admin/stats')
       .then(res => res.json())
       .then(data => {
         if (data.success) {
