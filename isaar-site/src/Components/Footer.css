@@ -1,0 +1,140 @@
+.footer {
+  background-color: #0d0d0d; /* Dark background */
+  color: #fff; /* White text */
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-text {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.contact-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-left h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.contact-right h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.contact-right p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.contact-right a {
+  color: #00acee;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-right a:hover {
+  text-decoration: underline;
+}
+
+.contact-button-wrap {
+  margin-top: 20px;
+}
+
+.contact-btn {
+  background-color: #00acee;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #007bb5;
+}
+
+.footer-icons {
+  margin-top: 30px;
+}
+
+.footer-icons a {
+  color: #fff;
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+  color: #00acee;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.footer:hover {
+  background-color: #fffdfd; /* Slightly lighter on hover */
+  color: #000000; /* Optional: highlight text on hover */
+}
+
+.contact-btn {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.footer-icons a {
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #000000;
+}

@@ -1,0 +1,21 @@
+/* === GENERAL LAYOUT === */
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+.admin-main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f7f9fc;
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+  .admin-main-content {
+    padding: 1rem;
+  }
+}

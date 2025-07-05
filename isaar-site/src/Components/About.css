@@ -1,0 +1,82 @@
+.about-zigzag {
+  background-color: #f5f7fc;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.zigzag-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zigzag-block.right {
+  flex-direction: row-reverse;
+}
+
+.zigzag-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.zigzag-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.zigzag-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #10193f;
+}
+
+.zigzag-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+.about-header {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background-color: #f5f7fc;
+}
+
+.about-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #10193f;
+  margin-bottom: 15px;
+}
+
+.about-header p {
+  font-size: 17px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.8;
+}
+/* Mobile fix */
+@media (max-width: 768px) {
+  .zigzag-block,
+  .zigzag-block.right {
+    flex-direction: column !important;
+  }
+
+  .zigzag-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .zigzag-text {
+    text-align: center;
+  }
+}

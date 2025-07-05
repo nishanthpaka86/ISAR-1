@@ -1,0 +1,106 @@
+/* Navbar container */
+.admin-navbar {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+.navbar-logo {
+  height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+/* Brand section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Toggle button */
+.menu-toggle {
+  display: none;
+  background-color: #1a1a2e;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nav links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-links li:hover {
+  color: #2b72fb;
+}
+
+/* Logout button */
+.logout-btn {
+  background: #e63946;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none; /* Hides it completely by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1a1a2e;
+    width: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links li,
+  .logout-btn {
+    color: white;
+  }
+
+  .logout-btn {
+    background: #e63946;
+  }
+}
+

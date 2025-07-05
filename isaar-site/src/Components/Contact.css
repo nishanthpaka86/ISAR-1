@@ -1,0 +1,95 @@
+.contact {
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  max-width: 600px;
+  margin: auto;
+  animation: fadeIn 1s ease forwards;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #002244;
+  margin-bottom: 25px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #00aaff;
+  outline: none;
+}
+
+.contact button {
+  background-color: #00aaff;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #0088cc;
+}
+
+.success-msg {
+  color: green;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.location-info {
+  margin-bottom: 2rem;
+}
+
+.location-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.location-info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.map-container {
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}

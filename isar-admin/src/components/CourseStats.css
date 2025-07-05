@@ -1,0 +1,31 @@
+/* src/components/DashboardCharts.css */
+.dashboard-charts {
+  padding: 2rem;
+  background: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.dashboard-charts h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2b72fb;
+  text-align: center;
+}
+
+.chart-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.chart-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}

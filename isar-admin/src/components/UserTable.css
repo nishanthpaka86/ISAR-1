@@ -1,0 +1,157 @@
+/* src/components/UserTable.css */
+
+.user-table-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Heading */
+.user-table-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2b72fb;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Search input */
+.search-input {
+  padding: 10px 14px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #2b72fb;
+}
+
+/* Table wrapper to allow scroll */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table styling */
+.user-table {
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.user-table thead {
+  background-color: #f0f0f0;
+}
+
+.user-table th,
+.user-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+  font-size: 0.95rem;
+}
+
+.user-table th {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f6f9fc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-table-container {
+    padding: 1rem;
+  }
+
+  .user-table-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .user-table {
+    font-size: 14px;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 0.75rem;
+  }
+}
+
+/* Optional: Horizontal scrollbar styling */
+.user-table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.user-table::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+/* Existing styles remain unchanged */
+
+/* Hide card view on desktop */
+.user-card-list {
+  display: none;
+}
+
+/* Show table by default */
+.user-table {
+  display: table;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .user-table {
+    display: none; /* Hide table on mobile */
+  }
+
+  .user-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .user-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .user-card h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #2b72fb;
+  }
+
+  .user-card p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+}

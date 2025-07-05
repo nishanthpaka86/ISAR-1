@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /
+Allow: /$
+Allow: /blank
+Allow: /blank-1
+Allow: /blank-2
+Allow: /blank-3
+Sitemap: https://www.isaar.in/sitemap.xml

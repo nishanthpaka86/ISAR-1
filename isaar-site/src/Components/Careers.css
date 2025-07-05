@@ -1,0 +1,142 @@
+.career-section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.join {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.full-width-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+/* Open Positions Section */
+.career-options {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.career-options h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #002244;
+}
+
+.career-options ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.job-title {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #00aaff, #005577);
+  color: white;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+}
+
+.job-title:hover {
+  background: linear-gradient(135deg, #0088cc, #003355);
+  transform: scale(1.05);
+}
+
+/* Job Description Section */
+.job-description {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.job-description h3 {
+  font-size: 1.8rem;
+  color: #004466;
+  margin-bottom: 1rem;
+}
+
+.job-description h4 {
+  color: #003355;
+  margin-top: 1.2rem;
+}
+
+.job-description ul {
+  margin-left: 1.5rem;
+  list-style: disc;
+  line-height: 1.6;
+}
+
+.job-description li {
+  margin-bottom: 0.6rem;
+}
+
+/* Apply Button */
+.apply-button {
+  display: inline-block;
+  background-color: #006699;
+  color: white;
+  padding: 12px 24px;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #004466;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .career-options ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .job-title {
+    width: 90%;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .job-description {
+    padding: 1.5rem;
+  }
+
+  .job-description h3 {
+    font-size: 1.4rem;
+  }
+}

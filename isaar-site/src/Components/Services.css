@@ -1,0 +1,191 @@
+/* Services.css */
+.services {
+  padding: 100px 20px;
+  background-color: #f9fbff;
+  text-align: center;
+}
+
+.services-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #10193f;
+}
+
+.starting {
+  font-size: 16px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.c {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.c:hover {
+  transform: translateY(-10px);
+}
+
+.c img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.text {
+  padding: 24px;
+}
+
+.text h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #1a237e;
+}
+
+.text p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.comingsoon-section {
+  margin-top: 50px;
+  position: relative;
+}
+
+.image-overlay-container {
+  position: relative;
+}
+
+.full-width-img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+  object-fit: cover;
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .services-heading {
+    font-size: 28px;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .coming-soon-overlay {
+    font-size: 38px;
+    padding: 8px 16px;
+  }
+}
+/* Enroll Button Styling */
+button.enroll-btn {
+  background-color: #0066ff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+}
+
+button.enroll-btn:hover {
+  background-color: #004bcc;
+  transform: scale(1.05);
+}
+
+/* Optional: Adjust for mobile view */
+@media (max-width: 600px) {
+  button.enroll-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+/* Style for syllabus toggle button */
+.syllabus-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ffd54f;
+  color: #333;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.syllabus-btn:hover {
+  background-color: #ffca28;
+}
+
+/* Style for the syllabus content */
+.syllabus-list {
+  margin-top: 10px;
+  background-color: #f0f8ff;
+  border: 1px solid #b3e5fc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.syllabus-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.syllabus-list li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #ccc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.syllabus-list li:last-child {
+  border-bottom: none;
+}
+
+/* Optional: Emoji style */
+.syllabus-list li::before {
+  content: '📘';
+  margin-right: 6px;
+}
