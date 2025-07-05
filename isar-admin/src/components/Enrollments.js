@@ -6,7 +6,7 @@ const Enrollments = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/admin/enrollments')
+    fetch('https://isar-backend.onrender.com/api/admin/enrollments')
       .then(res => res.json())
       .then(data => {
         if (data.success) {
