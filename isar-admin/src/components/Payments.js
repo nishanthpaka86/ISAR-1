@@ -13,7 +13,7 @@ const Payments = () => {
   const pageSize = 10;
 
   useEffect(() => {
-    fetch('https://isar-backend.onrender.com/api/admin/payments')
+    fetch('${process.env.REACT_APP_API_URL}/api/admin/payments')
       .then(res => res.json())
       .then(data => {
         if (data.success) {
