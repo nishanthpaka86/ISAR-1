@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('${process.env.REACT_APP_API_URL}/api/admin/stats')
+    fetch(`${process.env.REACT_APP_API_URL}/api/admin/stats`)
       .then(res => res.json())
       .then(data => {
         console.log('Dashboard stats:', data); // 👈 Debug
