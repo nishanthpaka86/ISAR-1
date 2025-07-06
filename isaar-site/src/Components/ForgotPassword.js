@@ -7,7 +7,7 @@ const ForgotPassword = () => {
   const [newPassword, setNewPassword] = useState('');
 
   const sendOtp = async () => {
-    const res = await fetch('https://isar-backend.onrender.com/api/auth/send-otp', {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/send-otp`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email }),
@@ -22,7 +22,7 @@ const ForgotPassword = () => {
   };
 
   const resetPassword = async () => {
-    const res = await fetch('https://isar-backend.onrender.com/api/auth/reset-with-otp', {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/reset-with-otp`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, otp, password: newPassword }),
