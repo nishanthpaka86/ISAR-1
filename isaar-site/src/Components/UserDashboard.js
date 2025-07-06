@@ -30,7 +30,7 @@ const UserDashboard = () => {
 
     const fetchCourses = async () => {
       try {
-        const res = await fetch(`https://isar-backend.onrender.com/api/auth/courses/${user.id}`);
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/courses/${user.id}`);
         const data = await res.json();
         if (data.success) {
           setCourses(data.courses);
