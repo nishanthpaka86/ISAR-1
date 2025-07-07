@@ -19,10 +19,10 @@ app.use('/api/auth', authRoutes);
 app.use('/api/payment', paymentRoutes);
 app.use('/api/admin', adminRoutes);
 
-// ✅ Only start the server if not in test environment
+// ✅ Start server on default port 80 for Railway public access
 if (require.main === module) {
-  const PORT = process.env.PORT || 8080;
+  const PORT = process.env.PORT || 80;
   app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 }
 
-module.exports = app; // ✅ Export app for testing
+module.exports = app;
