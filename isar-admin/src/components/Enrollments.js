@@ -6,7 +6,7 @@ const Enrollments = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/admin/enrollments')
+    fetch(`${process.env.REACT_APP_API_URL}/api/admin/enrollments`)
       .then(res => res.json())
       .then(data => {
         if (data.success) {

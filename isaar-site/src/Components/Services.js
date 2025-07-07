@@ -18,7 +18,7 @@ const Services = () => {
     const user = JSON.parse(localStorage.getItem('user'));
     if (user) {
       setIsLoggedIn(true);
-      fetch(`http://localhost:5000/api/auth/courses/${user.id}`)
+      fetch(`${process.env.REACT_APP_API_URL}/api/auth/courses/${user.id}`)
         .then(res => res.json())
         .then(data => {
           if (data.success) {
@@ -115,7 +115,7 @@ const Services = () => {
 
   if (price === 0) {
     // Free course enrollment
-    fetch('http://localhost:5000/api/auth/enroll', {
+    fetch(`${process.env.REACT_APP_API_URL}/api/auth/enroll`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -6,7 +6,7 @@ const UserTable = () => {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/admin/users')
+    fetch(`${process.env.REACT_APP_API_URL}/api/admin/users`)
       .then(res => res.json())
       .then(data => {
         if (data.success) {

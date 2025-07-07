@@ -35,7 +35,7 @@ const Payment = () => {
     script.onload = async () => {
       try {
         // Step 1: Create Order
-        const orderRes = await fetch('http://localhost:5000/api/payment/create-order', {
+        const orderRes = await fetch(`${process.env.REACT_APP_API_URL}/api/payment/create-order`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ amount: discountedPrice }),
@@ -53,7 +53,7 @@ const Payment = () => {
           order_id: order.id,
           handler: async function (response) {
             // Step 3: Verify Payment
-            const verifyRes = await fetch('http://localhost:5000/api/payment/verify', {
+            const verifyRes = await fetch(`${process.env.REACT_APP_API_URL}/api/payment/verify`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({

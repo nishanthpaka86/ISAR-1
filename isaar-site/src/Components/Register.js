@@ -12,7 +12,7 @@ const Register = () => {
   };
 
   const sendVerificationCode = async () => {
-    const res = await fetch('http://localhost:5000/api/auth/send-code', {
+    const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/send-code`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email: form.email })
@@ -30,7 +30,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('http://localhost:5000/api/auth/register', {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
