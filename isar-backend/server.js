@@ -4,6 +4,12 @@ const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 
 dotenv.config();
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://isar-admin.onrender.com', // or '*'
+  credentials: true
+}));
+
 
 const app = express();
 app.use(cors());
