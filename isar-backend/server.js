@@ -21,7 +21,7 @@ app.use('/api/admin', adminRoutes);
 
 // ✅ Only start the server if not in test environment
 if (require.main === module) {
-  const PORT = process.env.PORT || 5000;
+  const PORT = process.env.PORT || 8080;
   app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 }
 
