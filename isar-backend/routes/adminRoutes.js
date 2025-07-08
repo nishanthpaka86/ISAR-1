@@ -95,6 +95,17 @@ router.get('/payments', async (req, res) => {
     res.status(500).json({ success: false, message: 'Error fetching stats' });
   }
 });
+router.get('/test-db', async (req, res) => {
+  const db = require('../config/db');
+  try {
+    const [rows] = await db.query('SELECT NOW() AS current_time');
+    res.json({ success: true, time: rows[0].current_time });
+  } catch (err) {
+    console.error('DB Test error:', err);
+    res.status(500).json({ success: false, message: 'DB test failed', error: err.message });
+  }
+});
+
 
 
 
