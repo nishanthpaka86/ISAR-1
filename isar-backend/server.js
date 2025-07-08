@@ -27,7 +27,7 @@ app.use('/api/admin', adminRoutes);
 
 // ✅ Start server on default port 8080 for Railway public access
 if (require.main === module) {
-  const PORT = process.env.PORT || 8080;
+  const PORT = process.env.PORT || 10000;
   app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 }
 
